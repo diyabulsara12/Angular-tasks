@@ -1,0 +1,66 @@
+<p>databind works!</p>
+<!-- <input type="text" name="" id="" [value]="name">
+<div [style.color]="mystyle" [class.myclass]="mypro">class binding</div>
+<div [style.color]="mystyle">class binding</div> -->
+<table [class.table]="mypro">
+    <caption  [style.color]="capcolor" [style.text-transform]="captext" [style.text-align]="mycaption" >Student Details</caption>
+    <tr >
+        <td [attr.colspan]="cols" [style.text-align]="mycaption" > 
+    1Rivet University
+</td>
+<td></td>
+</tr>
+
+        <tr >
+            <th [class.th]="mypro"  [style.font-weight]="font">id</th>
+            <th [class.th]="mypro" [style.font-weight]="font">Name</th>
+            <th [class.th]="mypro" [style.font-weight]="font">Lastname</th>
+            <th [class.th]="mypro" [style.font-weight]="font">Address</th>
+            <th [class.th]="mypro" [style.font-weight]="font">dept</th>
+        </tr>
+        <tbody>
+                <tr >
+                    <td [class.td]="mypro">1</td>
+                    <td [class.td]="mypro" >Diya</td>
+                    <td [class.td]="mypro">Bulsara</td>
+                    <td [class.td]="mypro">Valsad</td>
+                    <td [class.td]="mypro" >comp</td>
+                </tr>
+
+                <tr>    
+                    <td [class.td]="mypro">1</td>
+                    <td [class.td]="mypro">Diya</td>
+                    <td [class.td]="mypro">Bulsara</td>
+                    <td [class.td]="mypro">Valsad</td>
+                    <td [class.td]="mypro">comp</td>
+                </tr>
+                <tr>
+                    <td [class.td]="mypro">1</td>
+                    <td [class.td]="mypro">Diya</td>
+                    <td [class.td]="mypro">Bulsara</td>
+                    <td [class.td]="mypro">Valsad</td>
+                    <td [class.td]="mypro">comp</td>
+                </tr>
+                <tr>
+                    <td [class.td]="mypro">1</td>
+                    <td [class.td]="mypro">Diya</td>
+                    <td  [class.td]="mypro"> Bulsara</td>
+                    <td [class.td]="mypro">Valsad</td>
+                    <td [class.td]="mypro">comp</td>
+                </tr>
+
+        </tbody>
+
+</table>
+
+<form action="">
+    <label for="">FirstName</label><br>
+    <input type="text" name="fname" [(ngModel)]="data.firstname"><br>
+    <label for="lastname" >Lastname</label><br>
+    <input type="text" name="lname" [(ngModel)]="data.lastname"><br>
+    <label for="Dept">Address</label><br>
+    <input type="text" name="add" [(ngModel)]="data.address"><br>
+    <input type="submit" value="submit" (click)="saveData()">
+</form>
+
+

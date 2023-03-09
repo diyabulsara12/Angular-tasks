@@ -1,0 +1,57 @@
+.myclass{
+    width: 100%;
+    background-color: red;
+}
+.table{
+    width: 100%;
+    height: 50%;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    
+}
+.td{
+    text-align: center;
+    padding: 15px;
+}
+   
+  .th{
+    text-align: center;
+    /* padding: 20px; */
+    padding-bottom: 20px; 
+    background-color: blue;
+    color: white;
+  }
+  tr:nth-child(even){background-color: #f2f2f2;}
+  tr:nth-child(odd){background-color: blanchedalmond;} 
+
+  input{
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: serif;
+    
+    
+  }
+  label{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: serif;
+  }
+
+  input[type=submit]{
+    width: 100px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+  }
+
+
+
+
+
+
+
+
